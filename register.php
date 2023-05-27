@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['username']) && isset($
     if ($password !== $confirmPassword) {
         $error = "Passwords do not match!";
     } else {
-        $xmlFilePath = 'Palomares-Reginio-Sosa_IT2A_finalproject_Scoops&Dreams.xml';
+        $xmlFilePath = 'Palomares_Reginio_Sosa_IT2A_finalproject_Scoops&Dreams.xml';
 
         if (file_exists($xmlFilePath)) {
             $xml = simplexml_load_file($xmlFilePath);

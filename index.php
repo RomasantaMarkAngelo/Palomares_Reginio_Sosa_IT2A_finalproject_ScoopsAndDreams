@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 function validateUser($username, $password)
 {
-    $xml = simplexml_load_file('Palomares-Reginio-Sosa_IT2A_finalproject_Scoops&Dreams.xml');
+    $xml = simplexml_load_file('Palomares_Reginio_Sosa_IT2A_finalproject_Scoops&Dreams.xml');
 
     foreach ($xml->user as $user) {
         if ($user->username == $username && $user->password == $password) {
